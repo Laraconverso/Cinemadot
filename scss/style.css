@@ -1,0 +1,575 @@
+body, html {
+  height: 100%;
+}
+
+.encabezado {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 50%;
+}
+
+#minilogo {
+  width: 75%;
+  margin-left: 25%;
+}
+
+.logoindex {
+  text-align: center;
+  padding: 3% 10% 5% 10%;
+}
+
+.logochico {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#lista {
+  /*id="lista"*/
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#menu-index {
+  /*id="menu"*/
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#boton-menu-index {
+  padding: 5% 10% 5% 10%;
+  background-color: #5e0606;
+  color: white;
+  border: solid white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Goldman", cursive;
+  -webkit-box-shadow: 0 3px whitesmoke;
+          box-shadow: 0 3px whitesmoke;
+  color: white;
+  border: solid white;
+  border-radius: 20px;
+  font-size: 120%;
+  text-transform: uppercase;
+  margin-top: 10%;
+  padding: 0 5% 0 5%;
+}
+
+#boton-menu-index:hover {
+  background-color: white;
+  border-color: #5e0606;
+  color: #5e0606;
+  -webkit-box-shadow: 0 2px #5e0606;
+          box-shadow: 0 2px #5e0606;
+}
+
+#menu {
+  /*id="menu"*/
+  text-decoration: none;
+  color: grey;
+  font-family: "Goldman", cursive;
+  text-transform: uppercase;
+}
+
+#listamenu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#navbar {
+  background-color: #5e0606;
+  color: white;
+  border: black;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 3px black;
+          box-shadow: 0 3px black;
+  color: white;
+  border: solid white;
+  border-radius: 20px;
+  font-size-adjust: initial;
+  text-transform: uppercase;
+  margin-top: 3%;
+  font-size: 100%;
+}
+
+#navbar:hover {
+  background-color: white;
+  border-color: #5e0606;
+  color: #5e0606;
+  -webkit-box-shadow: #5e0606;
+          box-shadow: #5e0606;
+}
+
+.botonesmenu {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+nav {
+  /*margin-right: 10%;
+        margin-left: 10%; */
+  padding: 3% 10% 5% 10%;
+}
+
+#navbarindex {
+  margin-top: 5%;
+}
+
+#contacto {
+  /* id="contacto"*/
+  text-decoration: none;
+  text-decoration: underline;
+  color: black;
+}
+
+#copyrightindex {
+  font-size: 80%;
+  text-align: right;
+  color: white;
+}
+
+#copyright {
+  /*id="copyright"*/
+  font-size: 80%;
+  text-align: right;
+}
+
+#titulo1 {
+  font-family: "Goldman", cursive;
+  font-size: 200%;
+  margin-left: 10%;
+}
+
+#indexbody {
+  background-image: url(../img/tiras.png), url(../img/fondobackindex.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #5e0606;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+}
+
+#fondoalt {
+  background-color: #5e0606;
+  margin: 0 10% 0 10%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#fondolateral {
+  background-image: url(../img/tiras.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+}
+
+#pie {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer {
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#icon {
+  width: 4.8%;
+  margin: 0.5%;
+}
+
+.puff-in-center {
+  -webkit-animation: puff-in-center 2s ease-in both;
+  animation: puff-in-center 2s ease-in both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-10-23 17:32:39
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/*#newsletter{
+    background-color:#f5e1df ;
+    border: black;
+}
+#tinews{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #f5e1df;
+}
+#botonformu{
+     background-color: #ffcccc;
+} */
+#cartelera {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 100em;
+}
+
+#titulo-cartelera {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 900;
+  padding: 3% 5%;
+  color: white;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#portada {
+  width: 20%;
+  height: auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#portada:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#avances {
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 0% 10% 0 10%;
+}
+
+/*#video{
+    padding: 0 10% 0 10%;
+}*/
+#titulotrailer {
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: left;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 600;
+}
+
+#tweet-titulo {
+  margin-top: 5%;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 600;
+}
+
+#textotrailer {
+  color: #5e0606;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#textolink {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #6807076c;
+  text-align: center;
+}
+
+#linked {
+  color: white;
+}
+
+#tweet {
+  margin-left: 20%;
+}
+
+.tweet {
+  padding: 0% 10% 0 10%;
+}
+
+#festivales {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 5% 0 5%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  justify-items: flex-end;
+}
+
+#festival {
+  text-decoration: none;
+  color: black;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#festival_foto {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+.festival_animacion {
+  position: relative;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.festival_animacion:hover {
+  opacity: 1;
+}
+
+.festival_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #6807076c;
+}
+
+.festival_overlay:hover {
+  opacity: 1;
+}
+
+.festival_masinfo {
+  color: white;
+  font-size: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#festival_titulo {
+  margin-left: 10%;
+  font-weight: 700;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+#festival_descripcion {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgba(143, 139, 139, 0.267);
+  color: #5e0606;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -2%;
+  text-align-last: left;
+}
+
+/*#prize{
+        display: grid;
+        padding: $small;
+        grid-template-columns: 40% 40%;
+        grid-gap: 5%;
+        justify-items: stretch ;
+        align-items: stretch;
+}*/
+#carouselExampleControls {
+  padding: 0 5% 0 5%;
+}
+
+#premios--padding {
+  padding: 2% 6% 2% 4%;
+}
+
+#premio_nombre {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+#premio_foto {
+  width: 100%;
+}
+
+#premio_ganadores {
+  text-decoration: underline;
+  color: #5e0606;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-left: 5%;
+}
+
+.card .card-block {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#textolink {
+  margin: 5% 10% 5% 10%;
+  background-color: #6807076c;
+  text-align: center;
+}
+
+#linked {
+  color: black;
+}
+
+/*#pagenotfound{
+        background-color:$error;
+        background-image: url(../img/tiras.png);
+        background-position: $centrar $centrar ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: $blanco;
+        padding: $paddingcincodiez;
+}*/
+/*# sourceMappingURL=style.css.map */
