@@ -57,6 +57,7 @@ body, html {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding: 2% 6% 2% 4%;
 }
 
 #menu-index {
@@ -365,8 +366,9 @@ footer {
 }
 
 #portada {
-  width: 20%;
-  height: auto;
+  width: 130px;
+  height: 200px;
+  padding: 1%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
