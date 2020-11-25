@@ -328,6 +328,15 @@ footer{
         flex-grow: 1;
 }
 #portada{  
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover{
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3); 
+        }
+        padding: 1%;
         @include lg(){
                 width: 250px;
                 height: 350px;
@@ -340,15 +349,6 @@ footer{
                 width: 130px; 
                 height: 200px;
         }
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        &:hover{
-                -webkit-transform: scale(1.3);
-                transform: scale(1.3);    
-        }
-        padding: 1%;
 }     
 //TRAILERS
 #avances{

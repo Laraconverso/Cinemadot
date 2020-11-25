@@ -265,6 +265,9 @@ footer {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   padding: 1%; }
+  #portada:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
   @media (min-width: 780px) {
     #portada {
       width: 250px;
@@ -277,9 +280,6 @@ footer {
     #portada {
       width: 130px;
       height: 200px; } }
-  #portada:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3); }
 
 #avances {
   overflow-y: hidden;

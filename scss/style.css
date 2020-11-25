@@ -374,6 +374,11 @@ footer {
   padding: 1%;
 }
 
+#portada:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 @media (min-width: 780px) {
   #portada {
     width: 250px;
@@ -393,11 +398,6 @@ footer {
     width: 130px;
     height: 200px;
   }
-}
-
-#portada:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
 }
 
 #avances {
