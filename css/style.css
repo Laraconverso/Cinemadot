@@ -247,7 +247,8 @@ footer {
   font-family: "Miriam Libre", sans-serif;
   font-weight: 900;
   padding: 3% 5%;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 #container {
   display: flex;
@@ -259,13 +260,23 @@ footer {
   flex-grow: 1; }
 
 #portada {
-  width: 130px;
-  height: 200px;
-  padding: 1%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
+  transition: .3s ease-in-out;
+  padding: 1%; }
+  @media (min-width: 780px) {
+    #portada {
+      width: 250px;
+      height: 350px; } }
+  @media (min-width: 320px) and (max-width: 780px) {
+    #portada {
+      width: 230px;
+      height: 300px; } }
+  @media (max-width: 320px) {
+    #portada {
+      width: 130px;
+      height: 200px; } }
   #portada:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3); }

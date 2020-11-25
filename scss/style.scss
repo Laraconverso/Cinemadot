@@ -37,6 +37,25 @@ $grillali: inline-grid;
 $subrayar: underline;  
 $mayusculas: uppercase;
 $opacidad: 1;
+//size mixins 
+//Small devices
+@mixin sm {
+        @media (max-width: 320px ) {
+            @content;
+        }
+}
+// Medium devices
+@mixin md {
+        @media (min-width: 320px) and (max-width:780px) {
+            @content;
+        }
+}
+// Large devices
+@mixin lg {
+        @media (min-width: 780px) {
+            @content;
+        }
+}
 //GENERAL
 body, html{
         height: $cien;
@@ -297,6 +316,7 @@ footer{
         font-weight: 900;
         padding: 3% 5%;
         color: $blanco;
+       text-align: $centrar;
 }
 #container{
         display: flex;
@@ -307,10 +327,19 @@ footer{
         align-content: $centrar;
         flex-grow: 1;
 }
-#portada{
-        width: 130px; 
-        height: 200px;
-        padding: 1%;
+#portada{  
+        @include lg(){
+                width: 250px;
+                height: 350px;
+        }
+        @include md(){
+                width: 230px;
+                height: 300px;
+        }
+        @include sm(){
+                width: 130px; 
+                height: 200px;
+        }
         -webkit-transform: scale(1);
         transform: scale(1);
         -webkit-transition: .3s ease-in-out;
@@ -319,6 +348,7 @@ footer{
                 -webkit-transform: scale(1.3);
                 transform: scale(1.3);    
         }
+        padding: 1%;
 }     
 //TRAILERS
 #avances{
