@@ -27,14 +27,14 @@ body, html {
 
 @media (min-width: 425px) and (max-width: 780px) {
   #logo {
-    width: 40%;
+    width: 65%;
     margin-bottom: 15%;
   }
 }
 
 @media (max-width: 425px) {
   #logo {
-    widhth: 30%;
+    widhth: 75%;
   }
 }
 
