@@ -308,12 +308,12 @@ footer {
 
 @media (min-width: 780px) {
   #video {
-    width: 560px;
+    width: 590px;
     height: 315px; } }
 
 @media (min-width: 425px) and (max-width: 780px) {
   #video {
-    width: 460px;
+    width: 390px;
     height: 250px; } }
 
 @media (max-width: 425px) {
