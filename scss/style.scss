@@ -40,13 +40,13 @@ $opacidad: 1;
 //SIZE MIXINS
 //Small devices
 @mixin sm {
-        @media (max-width:425px){
+        @media (max-width:430px){
                 @content;
         }
 }
 // Medium devices
 @mixin md {
-        @media (min-width: 425px) and (max-width:780px) {
+        @media (min-width: 430px) and (max-width:780px) {
             @content;
         }
 }
@@ -66,22 +66,6 @@ body, html{
         align-items: $centrar;
         padding: $cerodiez;
 }
-#logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        @include lg(){
-                width: $cincuenta;
-        }
-        @include md(){
-                width: 65%;
-                margin-bottom: 15%;
-        }
-        @include sm(){
-                widhth: 75%;
-        }
-
-}
 #minilogo{
        @include lg(){
                 width: 75%; 
@@ -92,9 +76,6 @@ body, html{
        @include sm(){
                 width: 90%;
        }
-}
-.logoindex{
-        text-align: $centrar;
 }
 .logochico{
         @include lg(){
@@ -120,39 +101,6 @@ body, html{
         justify-content: space-evenly;
         align-items: baseline;
         padding: $medium;
-        @include sm(){
-
-        }
-}
-#menu-index{
-        /*id="menu"*/
-        text-decoration: $none;
-        color: $blanco;
-        text-transform: $mayusculas;
-}
-#boton-menu-index{
-        padding: $paddingcincodiez;
-        background-color: $bordo;
-        color: $blanco;
-        border: solid $blanco;
-        cursor: pointer;
-        text-align: $centrar;
-        text-decoration: $none;
-        font-family: $tipo-boton;
-        box-shadow: 0 3px $niebla;
-        color: $blanco;
-        border: solid $blanco;
-        border-radius: 20px;
-        font-size: $t-titulo;
-        text-transform: $mayusculas;
-        margin-top: $diez;
-        padding: $small;
-        &:hover{
-                background-color: $blanco;
-                border-color: $bordo;
-                color: $bordo;
-                box-shadow: 0 2px $bordo;    
-        }
 }
 #menu{
         /*id="menu"*/
@@ -201,19 +149,11 @@ nav{
         margin-left: 10%; */
         padding: $padding3510;
 }
-#navbarindex{
-        margin-top: $cinco;
-}
 #contacto{
         /* id="contacto"*/
         text-decoration: $none;
         text-decoration: $subrayar;
         color: $negro;
-}
-#copyrightindex{
-        font-size: 80%;
-        text-align: right;
-        color: $blanco;
 }
 #copyright{
         /*id="copyright"*/
@@ -224,18 +164,6 @@ nav{
         font-family: $tipo-boton; 
         font-size: 200%;
         margin-left: $diez;
-}
-#indexbody{
-        background-image: url(../img/tiras.png), url(../img/fondobackindex.png);
-        height: $cien;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-color:$bordo;
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 3fr;
 }
 #fondoalt{
         background-color:$bordo;
@@ -252,6 +180,9 @@ nav{
 #footer{
         display: grid;
         grid-template-columns: 80% 20%;
+        @include sm(){
+                grid-template-columns: 70% 30%;
+        }
 }
 #pie{
         display: grid;
@@ -265,8 +196,16 @@ footer{
         margin-right: 7%;
 }
 #icon{
-        width:  4.8%;
         margin: 0.5%;
+        @include sm(){
+                width:  10%;
+        }
+        @include md(){
+                width:  4.5%;
+        }
+        @include lg(){
+                width:  3.5%;
+        }
 }
 //ANIMACIONES
 .puff-in-center {
@@ -318,6 +257,97 @@ footer{
         }
 }
 //INDEX
+#logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: $cincuenta;
+        @include sm(){
+                width: 75%;
+                margin-bottom: 20%;
+        }
+        @include md(){
+                width: 65%;
+                margin-bottom: 10%;
+        }
+}
+.logoindex{
+        text-align: $centrar;
+}
+#navbarindex{
+        @include sm(){
+                margin-top: 20%;
+        }
+        @include md(){
+                margin-top: $diez;
+        }
+        @include lg(){
+                margin-top: $cinco;
+        } 
+}
+#menu-index{
+        /*id="menu"*/
+        text-decoration: $none;
+        color: $blanco;
+        text-transform: $mayusculas;
+        @include sm(){
+                font-size: 75%;
+        }
+        @include md(){
+                font-size: 85%;
+        }
+        @include lg(){
+                font-size: $cien;
+        }
+        
+}
+#boton-menu-index{
+        padding: $paddingcincodiez;
+        background-color: $bordo;
+        color: $blanco;
+        border: solid $blanco;
+        cursor: pointer;
+        text-align: $centrar;
+        text-decoration: $none;
+        font-family: $tipo-boton;
+        box-shadow: 0 3px $niebla;
+        color: $blanco;
+        border: solid $blanco;
+        border-radius: 20px;
+        font-size: $t-titulo;
+        text-transform: $mayusculas;
+        margin-top: $diez;
+        margin-bottom: $diez;
+        margin-right: $diez;
+        padding: $small;
+        &:hover{
+                background-color: $blanco;
+                border-color: $bordo;
+                color: $bordo;
+                box-shadow: 0 2px $bordo;    
+        }
+}
+#indexbody{
+        background-image: url(../img/tiras.png), url(../img/fondobackindex.png);
+        height: $cien;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color:$bordo;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 3fr;
+}
+#copyrightindex{
+        font-size: 80%;
+        text-align: $centrar;
+        color: $blanco;
+        @include sm(){
+                font-size: 60%;
+        }
+}
+
  /*#newsletter{
     background-color:#f5e1df ;
     border: black;

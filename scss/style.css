@@ -13,51 +13,22 @@ body, html {
   padding: 0% 10% 0 10%;
 }
 
-#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 780px) {
-  #logo {
-    width: 50%;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 780px) {
-  #logo {
-    width: 65%;
-    margin-bottom: 15%;
-  }
-}
-
-@media (max-width: 425px) {
-  #logo {
-    widhth: 75%;
-  }
-}
-
 @media (min-width: 780px) {
   #minilogo {
     width: 75%;
   }
 }
 
-@media (min-width: 425px) and (max-width: 780px) {
+@media (min-width: 430px) and (max-width: 780px) {
   #minilogo {
     width: 85%;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   #minilogo {
     width: 90%;
   }
-}
-
-.logoindex {
-  text-align: center;
 }
 
 @media (min-width: 780px) {
@@ -70,7 +41,7 @@ body, html {
   }
 }
 
-@media (min-width: 425px) and (max-width: 780px) {
+@media (min-width: 430px) and (max-width: 780px) {
   .logochico {
     display: -ms-inline-grid;
     display: inline-grid;
@@ -80,7 +51,7 @@ body, html {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .logochico {
     display: none;
   }
@@ -106,41 +77,6 @@ body, html {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 2% 6% 2% 4%;
-}
-
-#menu-index {
-  /*id="menu"*/
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-}
-
-#boton-menu-index {
-  padding: 5% 10% 5% 10%;
-  background-color: #5e0606;
-  color: white;
-  border: solid white;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Goldman", cursive;
-  -webkit-box-shadow: 0 3px whitesmoke;
-          box-shadow: 0 3px whitesmoke;
-  color: white;
-  border: solid white;
-  border-radius: 20px;
-  font-size: 120%;
-  text-transform: uppercase;
-  margin-top: 10%;
-  padding: 0 5% 0 5%;
-}
-
-#boton-menu-index:hover {
-  background-color: white;
-  border-color: #5e0606;
-  color: #5e0606;
-  -webkit-box-shadow: 0 2px #5e0606;
-          box-shadow: 0 2px #5e0606;
 }
 
 #menu {
@@ -211,21 +147,11 @@ nav {
   padding: 3% 10% 5% 10%;
 }
 
-#navbarindex {
-  margin-top: 5%;
-}
-
 #contacto {
   /* id="contacto"*/
   text-decoration: none;
   text-decoration: underline;
   color: black;
-}
-
-#copyrightindex {
-  font-size: 80%;
-  text-align: right;
-  color: white;
 }
 
 #copyright {
@@ -238,22 +164,6 @@ nav {
   font-family: "Goldman", cursive;
   font-size: 200%;
   margin-left: 10%;
-}
-
-#indexbody {
-  background-image: url(../img/tiras.png), url(../img/fondobackindex.png);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #5e0606;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 3fr;
-      grid-template-rows: 3fr;
 }
 
 #fondoalt {
@@ -278,6 +188,13 @@ nav {
       grid-template-columns: 80% 20%;
 }
 
+@media (max-width: 430px) {
+  #footer {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+}
+
 #pie {
   display: -ms-grid;
   display: grid;
@@ -298,8 +215,25 @@ footer {
 }
 
 #icon {
-  width: 4.8%;
   margin: 0.5%;
+}
+
+@media (max-width: 430px) {
+  #icon {
+    width: 10%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #icon {
+    width: 4.5%;
+  }
+}
+
+@media (min-width: 780px) {
+  #icon {
+    width: 3.5%;
+  }
 }
 
 .puff-in-center {
@@ -349,6 +283,132 @@ footer {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
+  }
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media (max-width: 430px) {
+  #logo {
+    width: 75%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #logo {
+    width: 65%;
+    margin-bottom: 10%;
+  }
+}
+
+.logoindex {
+  text-align: center;
+}
+
+@media (max-width: 430px) {
+  #navbarindex {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #navbarindex {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 780px) {
+  #navbarindex {
+    margin-top: 5%;
+  }
+}
+
+#menu-index {
+  /*id="menu"*/
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 430px) {
+  #menu-index {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #menu-index {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 780px) {
+  #menu-index {
+    font-size: 100%;
+  }
+}
+
+#boton-menu-index {
+  padding: 5% 10% 5% 10%;
+  background-color: #5e0606;
+  color: white;
+  border: solid white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Goldman", cursive;
+  -webkit-box-shadow: 0 3px whitesmoke;
+          box-shadow: 0 3px whitesmoke;
+  color: white;
+  border: solid white;
+  border-radius: 20px;
+  font-size: 120%;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  padding: 0 5% 0 5%;
+}
+
+#boton-menu-index:hover {
+  background-color: white;
+  border-color: #5e0606;
+  color: #5e0606;
+  -webkit-box-shadow: 0 2px #5e0606;
+          box-shadow: 0 2px #5e0606;
+}
+
+#indexbody {
+  background-image: url(../img/tiras.png), url(../img/fondobackindex.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #5e0606;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+}
+
+#copyrightindex {
+  font-size: 80%;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 430px) {
+  #copyrightindex {
+    font-size: 60%;
   }
 }
 
@@ -434,14 +494,14 @@ footer {
   }
 }
 
-@media (min-width: 425px) and (max-width: 780px) {
+@media (min-width: 430px) and (max-width: 780px) {
   #portada {
     width: 230px;
     height: 300px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   #portada {
     width: 100px;
     height: 170px;
@@ -461,14 +521,14 @@ footer {
   }
 }
 
-@media (min-width: 425px) and (max-width: 780px) {
+@media (min-width: 430px) and (max-width: 780px) {
   #video {
     width: 390px;
     height: 250px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   #video {
     width: 260px;
     height: 150px;
