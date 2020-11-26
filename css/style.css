@@ -5,7 +5,8 @@ body, html {
 .encabezado {
   display: grid;
   grid-template-columns: 40% 60%;
-  align-items: center; }
+  align-items: center;
+  padding: 0% 10% 0 10%; }
 
 #logo {
   display: block;
@@ -14,18 +15,37 @@ body, html {
   margin-top: 3%;
   width: 50%; }
 
-#minilogo {
-  width: 75%;
-  margin-left: 25%; }
+@media (min-width: 780px) {
+  #minilogo {
+    width: 75%; } }
+
+@media (min-width: 425px) and (max-width: 780px) {
+  #minilogo {
+    width: 85%; } }
+
+@media (max-width: 425px) {
+  #minilogo {
+    width: 75%; } }
 
 .logoindex {
   text-align: center;
   padding: 3% 10% 5% 10%; }
 
-.logochico {
-  display: inline-grid;
-  grid-column-start: 1;
-  grid-column-end: 1; }
+@media (min-width: 780px) {
+  .logochico {
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 1; } }
+
+@media (min-width: 425px) and (max-width: 780px) {
+  .logochico {
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 1; } }
+
+@media (max-width: 425px) {
+  .logochico {
+    display: none; } }
 
 #lista {
   /*id="lista"*/
@@ -272,23 +292,35 @@ footer {
     #portada {
       width: 250px;
       height: 350px; } }
-  @media (min-width: 320px) and (max-width: 780px) {
+  @media (min-width: 425px) and (max-width: 780px) {
     #portada {
       width: 230px;
       height: 300px; } }
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     #portada {
-      width: 130px;
-      height: 200px; } }
+      width: 100px;
+      height: 170px; } }
 
 #avances {
   overflow-y: hidden;
   overflow-x: auto;
   padding: 0% 10% 0 10%; }
 
-/*#video{
-    padding: 0 10% 0 10%;
-}*/
+@media (min-width: 780px) {
+  #video {
+    width: 560px;
+    height: 315px; } }
+
+@media (min-width: 425px) and (max-width: 780px) {
+  #video {
+    width: 460px;
+    height: 250px; } }
+
+@media (max-width: 425px) {
+  #video {
+    width: 260px;
+    height: 150px; } }
+
 #titulotrailer {
   margin-top: 5%;
   margin-left: 10%;
@@ -428,14 +460,3 @@ footer {
 
 #linked {
   color: black; }
-
-/*#pagenotfound{
-        background-color:$error;
-        background-image: url(../img/tiras.png);
-        background-position: $centrar $centrar ;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        color: $blanco;
-        padding: $paddingcincodiez;
-}*/

@@ -37,16 +37,16 @@ $grillali: inline-grid;
 $subrayar: underline;  
 $mayusculas: uppercase;
 $opacidad: 1;
-//size mixins 
+//SIZE MIXINS
 //Small devices
 @mixin sm {
-        @media (max-width: 320px ) {
-            @content;
+        @media (max-width:425px){
+                @content;
         }
 }
 // Medium devices
 @mixin md {
-        @media (min-width: 320px) and (max-width:780px) {
+        @media (min-width: 425px) and (max-width:780px) {
             @content;
         }
 }
@@ -64,6 +64,7 @@ body, html{
         display: grid;
         grid-template-columns: 40% 60%;
         align-items: $centrar;
+        padding:$cerodiez;
 }
 #logo{
         display: block;
@@ -73,17 +74,34 @@ body, html{
         width: $cincuenta;
 }
 #minilogo{
-        width: 75%;
-        margin-left: 25%;
+       @include lg(){
+                width: 75%; 
+       } 
+       @include md(){
+                width: 85% ;
+       }
+       @include sm(){
+                width: 75%;
+       }
 }
 .logoindex{
         text-align: $centrar;
         padding: $padding3510;
 }
 .logochico{
-        display: $grillali;
-        grid-column-start: 1;
-        grid-column-end: 1;
+        @include lg(){
+                display: $grillali;
+                grid-column-start: 1;
+                grid-column-end: 1;
+        }
+        @include md(){
+                display: $grillali;
+                grid-column-start: 1;
+                grid-column-end: 1;
+        }
+        @include sm(){
+                display: $none;
+        }
 }
 #lista{
         /*id="lista"*/
@@ -346,8 +364,8 @@ footer{
                 height: 300px;
         }
         @include sm(){
-                width: 130px; 
-                height: 200px;
+                width: 100px; 
+                height: 170px;
         }
 }     
 //TRAILERS
@@ -356,9 +374,20 @@ footer{
         overflow-x: auto;
         padding: $cerodiez;
 }
-/*#video{
-    padding: 0 10% 0 10%;
-}*/
+#video{
+    @include lg(){
+            width: 560px;
+            height: 315px;
+    }
+    @include md(){
+        width: 460px;
+        height: 250px;
+    }
+    @include sm(){
+        width: 260px;
+        height: 150px;
+    }
+}
 #titulotrailer{
         margin-top: $cinco;
         margin-left: $diez;
@@ -501,15 +530,4 @@ footer{
 #linked{
         color: $negro;
 }
-//404-page not found
-/*#pagenotfound{
-        background-color:$error;
-        background-image: url(../img/tiras.png);
-        background-position: $centrar $centrar ;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        color: $blanco;
-        padding: $paddingcincodiez;
-}*/
 // by Lara Converso
