@@ -11,9 +11,14 @@ body, html {
 #logo {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  width: 50%; }
+  margin-right: auto; }
+  @media (min-width: 780px) {
+    #logo {
+      width: 50%; } }
+  @media (min-width: 425px) and (max-width: 780px) {
+    #logo {
+      width: 70%;
+      margin-bottom: 15%; } }
 
 @media (min-width: 780px) {
   #minilogo {
@@ -28,8 +33,7 @@ body, html {
     width: 75%; } }
 
 .logoindex {
-  text-align: center;
-  padding: 3% 10% 5% 10%; }
+  text-align: center; }
 
 @media (min-width: 780px) {
   .logochico {
