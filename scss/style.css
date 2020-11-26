@@ -27,8 +27,14 @@ body, html {
 
 @media (min-width: 425px) and (max-width: 780px) {
   #logo {
-    width: 70%;
+    width: 40%;
     margin-bottom: 15%;
+  }
+}
+
+@media (max-width: 425px) {
+  #logo {
+    widhth: 30%;
   }
 }
 
@@ -46,7 +52,7 @@ body, html {
 
 @media (max-width: 425px) {
   #minilogo {
-    width: 75%;
+    width: 90%;
   }
 }
 

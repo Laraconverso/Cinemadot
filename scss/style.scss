@@ -74,8 +74,11 @@ body, html{
                 width: $cincuenta;
         }
         @include md(){
-                width: 70%;
+                width: 40%;
                 margin-bottom: 15%;
+        }
+        @include sm(){
+                widhth: 30%;
         }
 
 }
@@ -87,7 +90,7 @@ body, html{
                 width: 85% ;
        }
        @include sm(){
-                width: 75%;
+                width: 90%;
        }
 }
 .logoindex{
@@ -117,6 +120,9 @@ body, html{
         justify-content: space-evenly;
         align-items: baseline;
         padding: $medium;
+        @include sm(){
+
+        }
 }
 #menu-index{
         /*id="menu"*/
