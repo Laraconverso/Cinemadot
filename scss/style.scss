@@ -467,6 +467,7 @@ footer{
         font-weight: 600;
         @include sm(){
                 font-size: 120%;
+                margin-left: 5%;
         }
         @include md(){
                 font-size: 155%;
@@ -492,10 +493,18 @@ footer{
         color: $blanco;
 }
 #tweet{
-        margin-left: 20%;
+        margin: 0 $diez 0 $diez;
+}
+.btn-danger{
+        @include sm(){
+                margin-left: 5%;
+        }
 }
 .tweet{
         padding: $cerodiez;
+        @include sm(){
+                padding: $small; 
+        }
 }
 //EVENTOS
 #festivales{
