@@ -382,16 +382,35 @@ footer {
   text-align: left;
   font-family: "Miriam Libre", sans-serif;
   font-weight: 600; }
+  @media (max-width: 430px) {
+    #titulotrailer {
+      font-size: 120%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #titulotrailer {
+      font-size: 145%; } }
+  @media (min-width: 780px) {
+    #titulotrailer {
+      font-size: 170%; } }
 
 #tweet-titulo {
   margin-top: 5%;
   font-family: "Miriam Libre", sans-serif;
   font-weight: 600; }
+  @media (max-width: 430px) {
+    #tweet-titulo {
+      font-size: 120%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #tweet-titulo {
+      font-size: 155%; } }
+  @media (min-width: 780px) {
+    #tweet-titulo {
+      font-size: 170%; } }
 
 #textotrailer {
   color: #5e0606;
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  text-align: justify; }
 
 #textolink {
   margin-top: 5%;

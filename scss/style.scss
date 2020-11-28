@@ -433,8 +433,8 @@ footer{
 }
 #video{
     @include lg(){
-            width: 660px;
-            height: 415px;
+        width: 660px;
+        height: 415px;
     }
     @include md(){
         width: 390px;
@@ -451,16 +451,35 @@ footer{
         text-align: left;
         font-family: $tipo-cartelera;
         font-weight: 600;
+        @include sm(){
+                font-size: 120%;
+        }
+        @include md(){
+                font-size: 145%;
+        }
+        @include lg(){
+                font-size: 170% ;
+        }
 }
 #tweet-titulo{
         margin-top: $cinco;
         font-family: $tipo-cartelera;
         font-weight: 600;
+        @include sm(){
+                font-size: 120%;
+        }
+        @include md(){
+                font-size: 155%;
+        }
+        @include lg(){
+                font-size: 170% ;
+        }
 }
 #textotrailer{
         color: $bordo;
         margin-left: $diez;
         margin-right: $diez;
+        text-align: justify;
 }
 #textolink{
         margin-top: $cinco;
