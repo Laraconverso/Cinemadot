@@ -565,6 +565,15 @@ footer{
         margin-left: 10%;
         font-weight: 700;
         font-family: $tipo-cartelera;
+        @include sm(){
+                font-size: 130%;
+        }
+        @include md(){
+                font-size: 145%;
+        }
+        @include lg(){
+                font-size: 170% ;
+        }
 }
 #festival_descripcion{
         font-family: $texto;
@@ -593,6 +602,15 @@ footer{
 #premio_nombre{
         font-family: $tipografiapremios;
         font-weight: $negrita;
+        @include sm(){
+                font-size: 130%;
+        }
+        @include md(){
+                font-size: 145%;
+        }
+        @include lg(){
+                font-size: 170% ;
+        }
 }
 #premio_foto{
         width: $cien;
@@ -600,6 +618,15 @@ footer{
 #premio_ganadores{
         text-decoration: $subrayar;
         color: $bordo;
+        @include sm(){
+                font-size: 100%;
+        }
+        @include md(){
+                font-size: 120%;
+        }
+        @include lg(){
+                font-size: 140% ;
+        }
 }
 .row{
         display: flex;
@@ -611,6 +638,15 @@ footer{
         margin: $paddingcincodiez;
         background-color: $bordo_fondo;
         text-align: $centrar;
+        @include sm(){
+                font-size: 100%;
+        }
+        @include md(){
+                font-size: 120%;
+        }
+        @include lg(){
+                font-size: 140% ;
+        }
 }
 #linked{
         color: $negro;

@@ -491,6 +491,15 @@ footer {
   margin-left: 10%;
   font-weight: 700;
   font-family: "Miriam Libre", sans-serif; }
+  @media (max-width: 430px) {
+    #festival_titulo {
+      font-size: 130%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #festival_titulo {
+      font-size: 145%; } }
+  @media (min-width: 780px) {
+    #festival_titulo {
+      font-size: 170%; } }
 
 #festival_descripcion {
   font-family: "Times New Roman", Times, serif;
@@ -518,6 +527,15 @@ footer {
 #premio_nombre {
   font-family: "Cinzel", serif;
   font-weight: 600; }
+  @media (max-width: 430px) {
+    #premio_nombre {
+      font-size: 130%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #premio_nombre {
+      font-size: 145%; } }
+  @media (min-width: 780px) {
+    #premio_nombre {
+      font-size: 170%; } }
 
 #premio_foto {
   width: 100%; }
@@ -525,6 +543,15 @@ footer {
 #premio_ganadores {
   text-decoration: underline;
   color: #5e0606; }
+  @media (max-width: 430px) {
+    #premio_ganadores {
+      font-size: 100%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #premio_ganadores {
+      font-size: 120%; } }
+  @media (min-width: 780px) {
+    #premio_ganadores {
+      font-size: 140%; } }
 
 .row {
   display: flex;
@@ -539,6 +566,15 @@ footer {
   margin: 5% 10% 5% 10%;
   background-color: #6807076c;
   text-align: center; }
+  @media (max-width: 430px) {
+    #textolink {
+      font-size: 100%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #textolink {
+      font-size: 120%; } }
+  @media (min-width: 780px) {
+    #textolink {
+      font-size: 140%; } }
 
 #linked {
   color: black; }
