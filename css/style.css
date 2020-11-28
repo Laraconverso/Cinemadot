@@ -8,17 +8,17 @@ body, html {
   align-items: center;
   padding: 0% 10% 0 10%; }
 
-@media (min-width: 780px) {
-  #minilogo {
-    width: 75%; } }
-
-@media (min-width: 430px) and (max-width: 780px) {
-  #minilogo {
-    width: 85%; } }
-
-@media (max-width: 430px) {
-  #minilogo {
-    width: 90%; } }
+#minilogo {
+  width: 50%;
+  /*@include lg(){
+                width: 75%; 
+       } 
+       @include md(){
+                width: 85% ;
+       }
+       @include sm(){
+                width: 90%;
+       }*/ }
 
 @media (min-width: 780px) {
   .logochico {
@@ -34,7 +34,9 @@ body, html {
 
 @media (max-width: 430px) {
   .logochico {
-    display: none; } }
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 1; } }
 
 #lista {
   /*id="lista"*/
@@ -102,12 +104,24 @@ nav {
 #copyright {
   /*id="copyright"*/
   font-size: 80%;
-  text-align: right; }
+  text-align: center;
+  color: black; }
+  @media (max-width: 430px) {
+    #copyright {
+      font-size: 60%; } }
 
 #titulo1 {
   font-family: "Goldman", cursive;
-  font-size: 200%;
   margin-left: 10%; }
+  @media (max-width: 430px) {
+    #titulo1 {
+      font-size: 150%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    #titulo1 {
+      font-size: 185%; } }
+  @media (min-width: 780px) {
+    #titulo1 {
+      font-size: 200%; } }
 
 #fondoalt {
   background-color: #5e0606;
