@@ -522,8 +522,16 @@ footer{
 #festivales{
         display: grid;
         padding: $small;
-        grid-template-columns: $cincuenta $cincuenta;
         justify-items: flex-end;
+        @include sm(){
+                grid-template-columns: $cien;
+        }
+        @include md(){
+                grid-template-columns: $cincuenta $cincuenta;
+        }
+        @include lg(){
+                grid-template-columns: $cincuenta $cincuenta;
+        }
 }
 #festival{
         text-decoration: none;
@@ -538,6 +546,16 @@ footer{
         align-items: center;
         width: $cincuenta;
         height: auto;
+        margin-bottom: 3%;
+        @include sm(){
+                width: 200px;
+        }
+        @include md(){
+                width: 225px;
+        }
+        @include lg(){
+                width: 250px;
+        }
 }
 .festival_animacion{
         position: relative;
@@ -567,14 +585,15 @@ footer{
         font-size: 100%;
         position: absolute;
         top: 30%;
-        left: $cincuenta;
+        margin-left: $cincuenta;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: $centrar; 
 }
 #festival_titulo{
-        margin-left: 10%;
+        margin-left: $diez;
+        color: $bordo;
         font-weight: 700;
         font-family: $tipo-cartelera;
         @include sm(){
@@ -593,8 +612,17 @@ footer{
         color: $bordo;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: -2%;
         text-align-last: left;
+        @include sm(){
+                font-size: 100%;
+        }
+        @include md(){
+                font-size: 120%;
+        }
+        @include lg(){
+                font-size: 140% ;
+        }
+
 }
 //PREMIOS
 /*#prize{
@@ -645,7 +673,9 @@ footer{
         flex-flow: wrap;
         padding-left: 5%;
 }
-.card .card-block {max-height:300px;overflow:auto;}
+.card .card-block {
+        max-height:300px;overflow:auto;
+}
 #textolink{
         margin: $paddingcincodiez;
         background-color: $bordo_fondo;
