@@ -528,26 +528,23 @@ footer{
 //EVENTOS
 #festivales{
         display: grid;
-        padding: $medium;
         justify-items: flex-end;
         @include sm(){
                 grid-template-columns: $cien;
+                padding: 0 10% 0 5%;
+                align-items: left;
         }
         @include md(){
                 grid-template-columns: $cincuenta $cincuenta;
+                padding: $medium;
         }
         @include lg(){
                 grid-template-columns: $cincuenta $cincuenta;
+                padding: $medium;
         }
 }
 #festival{
-        text-decoration: none;
-        color: $negro;
-        font-family: $tipo-cartelera;
-        font-weight: 600;
-        margin-left: 10%;
-        margin-right: 10%;
-
+        text-decoration: $none;
 }
 #festival_foto {
         align-items: center;
@@ -603,6 +600,7 @@ footer{
         color: $bordo;
         font-weight: 700;
         font-family: $tipo-cartelera;
+        text-decoration: $none;
         @include sm(){
                 font-size: 130%;
         }
@@ -627,7 +625,7 @@ footer{
                 font-size: 120%;
         }
         @include lg(){
-                font-size: 140% ;
+                font-size: 130% ;
         }
 
 }

@@ -457,25 +457,23 @@ footer {
 
 #festivales {
   display: grid;
-  padding: 2% 6% 2% 4%;
   justify-items: flex-end; }
   @media (max-width: 430px) {
     #festivales {
-      grid-template-columns: 100%; } }
+      grid-template-columns: 100%;
+      padding: 0 10% 0 5%;
+      align-items: left; } }
   @media (min-width: 430px) and (max-width: 780px) {
     #festivales {
-      grid-template-columns: 50% 50%; } }
+      grid-template-columns: 50% 50%;
+      padding: 2% 6% 2% 4%; } }
   @media (min-width: 780px) {
     #festivales {
-      grid-template-columns: 50% 50%; } }
+      grid-template-columns: 50% 50%;
+      padding: 2% 6% 2% 4%; } }
 
 #festival {
-  text-decoration: none;
-  color: black;
-  font-family: "Miriam Libre", sans-serif;
-  font-weight: 600;
-  margin-left: 10%;
-  margin-right: 10%; }
+  text-decoration: none; }
 
 #festival_foto {
   align-items: center;
@@ -528,7 +526,8 @@ footer {
   margin-left: 10%;
   color: #5e0606;
   font-weight: 700;
-  font-family: "Miriam Libre", sans-serif; }
+  font-family: "Miriam Libre", sans-serif;
+  text-decoration: none; }
   @media (max-width: 430px) {
     #festival_titulo {
       font-size: 130%; } }
@@ -554,7 +553,7 @@ footer {
       font-size: 120%; } }
   @media (min-width: 780px) {
     #festival_descripcion {
-      font-size: 140%; } }
+      font-size: 130%; } }
 
 /*#prize{
         display: grid;
