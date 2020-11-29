@@ -138,10 +138,10 @@ body, html{
         margin-top: 3%;
         font-size: 100%;
         &:hover {
-           background-color:$blanco;
-        border-color: $bordo;
-        color: $bordo;
-        box-shadow: $bordo;     
+                background-color:$blanco;
+                border-color: $bordo;
+                color: $bordo;
+                box-shadow: $bordo;     
         }      
 }
 .botonesmenu{
@@ -192,10 +192,6 @@ nav{
         background-position: $centrar $centrar ;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
 }
 #footer{
