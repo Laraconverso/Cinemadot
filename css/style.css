@@ -4,9 +4,18 @@ body, html {
 
 .encabezado {
   display: grid;
-  grid-template-columns: 40% 60%;
+  justify-items: flex-end;
   align-items: center;
   padding: 0% 10% 0 10%; }
+  @media (max-width: 430px) {
+    .encabezado {
+      grid-template-columns: 100%; } }
+  @media (min-width: 430px) and (max-width: 780px) {
+    .encabezado {
+      grid-template-columns: 40% 60%; } }
+  @media (min-width: 780px) {
+    .encabezado {
+      grid-template-columns: 40% 60%; } }
 
 #minilogo {
   width: 50%;
@@ -86,9 +95,7 @@ body, html {
     box-shadow: #5e0606; }
 
 .botonesmenu {
-  display: inline-grid;
-  grid-column-start: 2;
-  grid-column-end: 3; }
+  display: inline-grid; }
 
 nav {
   /*margin-right: 10%;

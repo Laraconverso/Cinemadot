@@ -5,12 +5,32 @@ body, html {
 .encabezado {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  justify-items: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0% 10% 0 10%;
+}
+
+@media (max-width: 430px) {
+  .encabezado {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  .encabezado {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+}
+
+@media (min-width: 780px) {
+  .encabezado {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
 }
 
 #minilogo {
@@ -138,9 +158,6 @@ body, html {
 .botonesmenu {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 nav {

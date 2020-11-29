@@ -62,9 +62,18 @@ body, html{
 }
 .encabezado{
         display: grid;
-        grid-template-columns: 40% 60%;
+        justify-items: flex-end;
         align-items: $centrar;
         padding: $cerodiez;
+        @include sm(){
+                grid-template-columns: $cien;
+        }
+        @include md(){
+                grid-template-columns: 40% 60%;
+        }
+        @include lg(){
+                grid-template-columns: 40% 60%;
+        }
 }
 #minilogo{
         width: 50%;
@@ -146,8 +155,6 @@ body, html{
 }
 .botonesmenu{
         display: inline-grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
 }
 nav{
         /*margin-right: 10%;
