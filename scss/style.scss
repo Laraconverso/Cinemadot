@@ -193,6 +193,10 @@ nav{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 #footer{
         display: grid;
@@ -391,7 +395,16 @@ footer{
         font-weight: 900;
         padding: 3% 5%;
         color: $blanco;
-       text-align: $centrar;
+        text-align: $centrar;
+        @include sm(){
+                font-size: 20px ;
+        }
+        @include md(){
+                font-size: 30px;
+        }
+        @include lg(){
+                font-size: 40px;
+        }
 }
 #container{
         display: flex;
@@ -413,16 +426,19 @@ footer{
         }
         padding: 1%;
         @include lg(){
-                width: 250px;
-                height: 350px;
+                width: 240px;
+                height: 330px;
+                padding: $none;
         }
         @include md(){
-                width: 230px;
+                width: 200px;
                 height: 300px;
+                padding: 2%;
         }
         @include sm(){
-                width: 100px; 
+                width: 120px; 
                 height: 170px;
+                padding: 1%;
         }
 }     
 //TRAILERS
