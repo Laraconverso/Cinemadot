@@ -528,7 +528,7 @@ footer{
 //EVENTOS
 #festivales{
         display: grid;
-        padding: $small;
+        padding: $medium;
         justify-items: flex-end;
         @include sm(){
                 grid-template-columns: $cien;
