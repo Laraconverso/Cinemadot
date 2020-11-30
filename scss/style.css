@@ -742,7 +742,7 @@ footer {
   #festivales {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    padding: 0 10% 0 5%;
+    padding: 0 10% 0 10%;
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;

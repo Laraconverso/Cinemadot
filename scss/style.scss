@@ -557,7 +557,7 @@ footer{
         justify-items: flex-end;
         @include sm(){
                 grid-template-columns: $cien;
-                padding: 0 10% 0 5%;
+                padding: 0 10% 0 10%;
                 align-items: left;
         }
         @include md(){

@@ -481,7 +481,7 @@ footer {
   @media (max-width: 430px) {
     #festivales {
       grid-template-columns: 100%;
-      padding: 0 10% 0 5%;
+      padding: 0 10% 0 10%;
       align-items: left; } }
   @media (min-width: 430px) and (max-width: 780px) {
     #festivales {
