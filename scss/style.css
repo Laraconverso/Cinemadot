@@ -35,15 +35,29 @@ body, html {
 
 #minilogo {
   width: 50%;
-  /*@include lg(){
-                width: 75%; 
-       } 
-       @include md(){
-                width: 85% ;
-       }
-       @include sm(){
-                width: 90%;
-       }*/
+}
+
+@media (min-width: 780px) {
+  #minilogo {
+    width: 75%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #minilogo {
+    width: 85%;
+  }
+}
+
+@media (max-width: 430px) {
+  #minilogo {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 780px) {
@@ -68,6 +82,8 @@ body, html {
 
 @media (max-width: 430px) {
   .logochico {
+    padding: 0 5% 0 5%;
+    margin-left: 5%;
     display: -ms-inline-grid;
     display: inline-grid;
     -ms-grid-column: 1;
@@ -124,9 +140,28 @@ body, html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 430px) {
+  #listamenu {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 780px) {
+  #listamenu {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 780px) {
+  #listamenu {
+    font-size: 100%;
+  }
 }
 
 #navbar {
@@ -205,7 +240,7 @@ nav {
 
 @media (min-width: 780px) {
   #titulo1 {
-    font-size: 200%;
+    font-size: 220%;
   }
 }
 
@@ -548,6 +583,14 @@ footer {
   transform: scale(1.3);
 }
 
+@media (min-width: 1024px) {
+  #portada {
+    width: 170px;
+    height: auto;
+    padding: 1%;
+  }
+}
+
 @media (min-width: 780px) {
   #portada {
     width: 240px;
@@ -558,7 +601,7 @@ footer {
 
 @media (min-width: 430px) and (max-width: 780px) {
   #portada {
-    width: 200px;
+    width: 220px;
     height: 300px;
     padding: 2%;
   }
