@@ -393,7 +393,8 @@ footer {
     #portada {
       width: 120px;
       height: 170px;
-      padding: 1%; } }
+      padding: 1%;
+      margin-bottom: 3%; } }
 
 #avances {
   overflow-y: hidden;
