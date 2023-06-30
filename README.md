@@ -16,4 +16,3 @@ Preview:
 
 
 This site incluedes a basic landing page with some buttons that takes you to other pages. 
-The following pages consume a json file 
